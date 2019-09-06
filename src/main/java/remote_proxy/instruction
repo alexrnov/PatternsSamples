@@ -1,0 +1,15 @@
+0. Выполнить сценарий build.gradle
+
+1. Запустить В IDE classes\java\main\download\NanoServer.class
+//примечание: как оказалось, схема удаленного доступа работает и без запуска
+//web-сервера, поэтому необходимость выполнения первого пункта отпадает
+
+2. В первом окне cmd выполнить команду:
+D:\projectsIDEA\Patterns\build\classes\java\main>rmiregistry
+
+3. Во втором окне cmd выполнить команду:
+D:\projectsIDEA\Patterns\build\classes\java\main>java -Djava.rmi.server.codebase=http://localhost:8080/ remote_proxy.server.ServerOfShops
+
+4. В третьем окне cmd выполнить команду:
+D:\projectsIDEA\Patterns\build\classes\java\main>java remote_proxy.client.MonitorOfShops
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvc.view_and_controller.ControllerPril">
+   <children>
+      <SplitPane layoutX="69.0" layoutY="82.0" prefHeight="300.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="194.0" prefWidth="368.0">
+               <children>
+                  <Button layoutX="171.0" layoutY="137.0" mnemonicParsing="false" onAction="#findValue" text="Button" />
+                  <TextField fx:id="key" layoutX="123.0" layoutY="45.0" />
+                  <TextField fx:id="value" layoutX="123.0" layoutY="94.0" />
+                  <Label layoutX="84.0" layoutY="49.0" text="Key:" />
+                  <Label layoutX="80.0" layoutY="98.0" text="Value:" />
+                  <TextField fx:id="output" layoutX="123.0" layoutY="188.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

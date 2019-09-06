@@ -1,0 +1,29 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  testCompile group: 'junit', name: 'junit', version: '4.12'
+  compile group: 'org.nanohttpd', name: 'nanohttpd', version: '2.3.0'
+}
+
+compileJava.options.encoding = 'UTF-8' //необходимо для правильного отображения кириллицы
+
+tasks.withType(JavaCompile) { //также необходимо для правильного отображения кириллицы
+  options.encoding = 'UTF-8'
+}
+
+sourceSets { //добавить файлы fxml и css при сборке
+  main {
+    resources {
+      srcDirs = ["src/main/java"]
+      includes = ["**/*.fxml", "**/*.css"]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.background{
+    -fx-background-color: #FFFFF0;
+}
+
+.imageView{
+    -fx-background-color: white;
+}
+
+.text-field {
+    -fx-border-color: #bdbfdf;
+    -fx-border-width: 2.0px;
+}
+
+.hbox {
+     -fx-border-color: #374923;
+     -fx-border-width: 1;
+}
