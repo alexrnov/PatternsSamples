@@ -12,7 +12,7 @@ package state;
  */
 public class Turnstile {
     /*
-    Все возможные состотяния
+    Все возможные состояния
      */
     private State closedState; //турникет закрыт (пока не брошен жетон)
     private State openState; //турникет открыт (пока не прошел человек)

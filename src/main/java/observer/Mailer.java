@@ -18,6 +18,9 @@ public class Mailer implements Observable {
 
     @Override
     public void registerObserver(Observer observer) {
+        if (observers.contains(observer)) {
+
+        }
         observers.add(observer);
     }
 
